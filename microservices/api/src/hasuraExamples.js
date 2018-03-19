@@ -3,6 +3,7 @@ var router = express.Router();
 var config = require('./config');
 var request = require('request');
 
+
 router.route("/").get(function (req, res) {
   res.render("home");
 })
@@ -43,6 +44,10 @@ router.route("/examples/data").get(function (req, res) {
     }
     res.render('data', {'data': JSON.parse(body)});
   })
+})
+
+router.route("/unanimous").get(function(req,res){
+  res.sendFile("views/navbar.html", {root: __dirname});
 })
 
 router.route("/examples/auth").get(function (req, res) {
