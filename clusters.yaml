@@ -1,0 +1,7 @@
+- alias: hasura
+  config:
+    configmap: controller-conf
+    namespace: halves46-hasura
+  data: null
+  kubeContext: halves46
+  name: halves46
