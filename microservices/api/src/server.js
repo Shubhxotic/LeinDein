@@ -29,6 +29,8 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+app.use(express.static('static'))
+
 app.use('/', hasuraExamplesRouter);
 
 app.listen(8080, function () {

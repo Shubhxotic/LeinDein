@@ -5,8 +5,23 @@ var request = require('request');
 
 
 router.route("/").get(function (req, res) {
-  res.render("home");
+  res.render("homepage");
 })
+
+router.route("/prodDesc").get(function (req, res) {
+  res.render("lenden_pd");
+})
+
+
+router.route("/shoppingcart").get(function (req, res) {
+  res.render("navbar");
+})
+
+ 
+router.route("/subcat").get(function (req, res) {
+  res.render("subcat_filters");
+})
+
 
 router.route("/examples/data").get(function (req, res) {
   console.log("Get articles");
