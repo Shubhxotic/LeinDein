@@ -22,7 +22,6 @@ app.engine('handlebars', exphbs({
   	}
 	})
 );
-
 app.set('view engine', 'handlebars');
 
 app.use(bodyParser.json());
