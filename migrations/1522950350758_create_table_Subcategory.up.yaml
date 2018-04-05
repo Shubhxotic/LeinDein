@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "Subcategory"("Subcat_id" integer NOT NULL, "SubcatName" text
+      NOT NULL, "Cat_id" integer NOT NULL, "Quality_id" integer NOT NULL, PRIMARY
+      KEY ("Subcat_id") )
+  type: run_sql
+- args:
+    name: Subcategory
+  type: add_existing_table_or_view
